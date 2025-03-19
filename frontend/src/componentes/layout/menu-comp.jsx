@@ -185,28 +185,32 @@ const BtnMenuComp = ({titulo,logo,sub,goAccion}) => {
                         }
                 </a>
                 :
-                <NavLink
-                Myclass={'MenuP-BtnNav'+(activeSelect ? ' selec-MenuP-BtnNav': '')}
-                to={titulo[1] ? titulo[1] : '#'}
-                children={
-                    <>
-                        {
-                            logo ? 
-                            <div className='MenuP-icoBtn'>
-                                <FontAwesomeIcono
-                                 iconName={logo}
-                                />
-                            </div>:
-                            <div className='MenuP-icoBtn MenuP-MenuNoVisible' >
-                                <img src={IMGprovider['downMenu']} alt="" />
+                <div onClick={pru}>
+                    <NavLink
+                    onClick={pru}
+                    Myclass={'MenuP-BtnNav'+(activeSelect ? ' selec-MenuP-BtnNav': '')}
+                    to={titulo[1] ? titulo[1] : '#'}
+                    children={
+                        <>
+                            {
+                                logo ? 
+                                <div className='MenuP-icoBtn'>
+                                    <FontAwesomeIcono
+                                     iconName={logo}
+                                    />
+                                </div>:
+                                <div className='MenuP-icoBtn MenuP-MenuNoVisible' >
+                                    <img src={IMGprovider['downMenu']} alt="" />
+                                </div>
+                            }
+                            <div >
+                                <p >{titulo[0]}</p>
                             </div>
-                        }
-                        <div >
-                            <p >{titulo[0]}</p>
-                        </div>
-                    </>
-                }
-                />
+                        </>
+                    }
+                    />
+
+                </div>
             }
             {
                 sub ?

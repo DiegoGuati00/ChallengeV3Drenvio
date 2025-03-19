@@ -163,7 +163,7 @@ const Subida = ({config={}}) => {
         }
         return () => {
         };
-    }, [precios]);
+    }, [precios,productos]);
     return (
         <div id='subida'>
             <h1>subida</h1>
