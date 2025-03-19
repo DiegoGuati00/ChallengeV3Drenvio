@@ -39,7 +39,7 @@ VITE_APP_URL=http://localhost:3000
 To create the container with Docker you must first run the command
 
 ```bash
-  bash /docker/configInit
+  bash docker/configInit
 ```
 This command will create the `/config` folder with all the Apache configuration files to serve the frontend, the `CORS` configuration of the backend and the `.env` files of each service so that you can modify them as needed.
 
