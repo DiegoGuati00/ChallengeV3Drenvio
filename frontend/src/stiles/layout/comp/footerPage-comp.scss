@@ -1,0 +1,20 @@
+.footer-page{ 
+    padding: 3rem;
+    background: $footer_background;
+    .C1-sub{
+        display: flex;
+        width: 300px;
+        margin: 2rem auto;
+        justify-content: space-evenly;
+        padding: 2rem;
+        border: 3px solid $menu_background_barra;
+        border-radius: 1rem;
+        a{
+            width: 30px;
+        }
+        .cls-1{
+            fill: $menu_btn_icon_color;
+        }
+    }
+}
+

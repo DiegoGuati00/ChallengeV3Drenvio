@@ -1,0 +1,181 @@
+#menu-public{
+    .MenuP-menu{
+        // // background: linear-gradient(180deg, rgba(255,255,255,1) 59%, rgba(255,255,255,0.9514399509803921) 74%, rgba(255,255,255,0.9598433123249299) 88%);
+        // background: linear-gradient(180deg, rgba(255,255,255,1) 59%, rgba(255,255,255,0.8926164215686274) 74%, rgba(255,255,255,0.774969362745098) 88%, rgba(255,255,255,0.7441570378151261) 100%);
+        background: $menu_background_barra;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 2rem;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        @include desktop{
+            padding: 1.3vw 2rem 1rem 2rem;
+
+        }
+        @include responsi(2000px){
+            // max-width: 2000px;
+            left: auto;
+        }
+    }
+    .MenuP-logo{
+        flex: 0 0 calc(40%);
+        margin-left: 1rem;
+        @include tablet{
+            max-width: 10vw;
+        }
+        @include desktop{
+            margin-left: 3rem;
+        }
+        img{
+            margin: 0;
+        }
+    }
+    .MenuP-hamburguesa{
+        height: 100%;
+        width: 7%;
+        color: $MenuHamburguesa;
+        @include desktop{
+            display: none;
+        }
+    }
+    .MenuP-nav{
+        max-height: 80vh;
+        overflow: overlay;
+        position: absolute;
+        padding: 0 2rem;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background: $menu_background_barra;
+        @include desktop{
+            background: none;
+            position: initial;
+            justify-content: flex-end;
+        }
+    }
+    .MenuP-BtnNav{
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1.5rem;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            color: $menu_btn_p;
+            font-weight: 600;
+            font-size: 13px !important;
+            margin: .1rem 1rem;
+
+        }
+        background: $menu_btn_background;
+        &:hover{
+            background: $menu_btn_background_hover;
+            p{
+                // color: rgb(211, 92, 207);
+                color: $menu_btn_p_hover;
+            }
+        }
+        @include desktop{
+            margin: 0 .5rem;
+            // max-height: 2.5rem;
+            padding: .5rem;
+        }
+    }
+    .selec-MenuP-BtnNav{
+        background: $menu_btn_background_hover;
+            p{
+                color: white;
+            }
+    }
+    .MenuP-icoBtn{
+        min-width: 1vw;
+        max-width: 2rem;
+        padding: .5rem;
+        flex: 0 0 calc(10%);
+        color: $menu_btn_icon_color;
+        @include desktop{
+            padding: 0;
+            width: 1rem;
+            height: 100%;
+            margin-left: .5rem;
+        }
+    }
+
+    .MenuP-subBtnNav{
+        display: flex;
+        text-align: center;
+        // height: 20vw;
+        max-height: 5rem;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: .3rem;
+        p{
+            color: $menu_btn_p;
+            font-weight: 500;
+        }
+        &:hover{
+            background: $menu_btn_background_hover;
+            p{
+                color: white;
+            }
+        }
+        @include desktop{
+            margin: 0 .5rem;
+            // max-height: 2.5rem;
+            padding: .5rem;
+        }
+    }
+    .MenuP-subContentBtnNav{
+        hr{
+            color: $menu_btn_p;
+            @include desktop{
+                margin: .1rem 0;
+            }
+        }
+        @include desktop{
+            background: rgb(252, 252, 252,.9);
+        }
+    }
+    .MenuP-BtnNavContenedor{
+        p{
+            min-width: max-content;
+            @include desktop{
+                font-size: 1.05vw;
+            }
+            @include responsi(1500px){
+            }
+        }
+    }
+    .MenuP-esconde{
+        display: none;
+        @include desktop{
+            display: flex;
+        }
+    }
+
+    .MenuP-Content{
+        @include desktop{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .MenuP-MenuHidden{
+        display: none;
+    }
+    .MenuP-MenuVisible{
+        @include desktop{
+            position: absolute;
+        }
+    }
+    .MenuP-MenuNoVisible{
+        visibility: hidden;
+        @include desktop{
+            display: none;
+        }
+    }
+}

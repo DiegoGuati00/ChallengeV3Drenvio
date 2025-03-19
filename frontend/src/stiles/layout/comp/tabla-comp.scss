@@ -1,0 +1,66 @@
+#tablaComp{
+    box-shadow: 0 0 8px 2px;
+    padding: 0.5rem;
+    min-width: fit-content;
+    margin: 1rem;
+    .t-first{
+        display: flex;
+        width: 100%;
+    }
+    .t-second{
+        width: 100%;
+        overflow-x: scroll;
+        // max-height: 33rem;
+    }
+    .t-cajon{
+        width: 100%;
+        display: flex;
+        box-shadow: 0 0 6px 1px #00a8ff;
+        margin: 0.5rem 0;
+    }
+    .t-celda{
+        text-align: center;
+        border: 1px solid;
+        padding: 1rem 0;
+        flex: 1;
+        margin: 0 0.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        word-break: break-all;
+    }
+    .t-row{
+        display: flex;
+        padding: 0.1rem 0;
+        cursor: pointer;
+    }
+    .tc-cajon{
+        min-width: 15rem;
+        flex: 1 0;
+        margin: 0rem .3rem;
+        border: 1px solid;
+        padding: 1rem 0;
+        box-shadow: 0 0 5px 2px;
+        p{
+            text-align: center;
+        }
+    }
+    .tablaCrud{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .t-celda{
+            margin: 1rem;
+            max-width: fit-content;
+        }
+    }
+    .btn-celda{
+        color: black;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow:2px 2px 12px 2px;
+        &:hover{
+            box-shadow: 0px 0px 6px 0px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/** Media Queries **/
+
+@mixin responsi($tamañoo) {
+    $tamaño: $tamañoo;
+    @media (min-width:#{$tamaño}) {
+        @content;
+    }
+}
+@mixin responsiInverso($tamañoo) {
+    $tamaño: $tamañoo;
+    @media (max-width:#{$tamaño}) {
+        @content;
+    }
+}
+
+@mixin telefono {
+    @media (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin reloj {
+    @media (min-width: #{$reloj}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}

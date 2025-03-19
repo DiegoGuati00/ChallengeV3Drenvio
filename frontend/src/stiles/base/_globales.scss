@@ -1,0 +1,137 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    // max-width: 2000px;
+    margin: 0 auto !important;
+    background: $background-page;
+    font-family: $fuente_principal;
+    font-size: 10vw;
+    line-height: 1;
+    min-width: 0 !important;
+    @include reloj{
+        font-size: 1.6rem;
+    }
+}
+// span{
+//     // text-transform: uppercase;
+// }
+
+p {
+    // text-transform: lowercase;
+    color: $color_p;
+    height: auto;
+    padding: 0px;
+    margin: auto;
+    font-size: 3.5vw;
+    @include tablet{
+        font-size: 1.8rem;
+    }
+    @include responsi(1400px){
+        font-size: 1.3vw;
+    }
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    // text-transform: lowercase;
+    font-family: $fuente_principal;
+    font-weight: 900;
+    color: $color_h;
+    // color: #103d5c;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 10vw;
+    @include reloj{
+        font-size: 5rem;
+    }
+    @include responsi(1400px){
+        font-size: 4vw;
+    }
+}
+
+h2 {
+    font-size: 6.7vw;
+    // @include telefono{
+    //     font-size: 3rem;
+    // }
+    @include tablet{
+        font-size: 3.6rem;
+        
+    }
+    @include responsi(1400px){
+        font-size: 2.6vw;
+    }
+}
+
+h3 {
+    font-size: 10vw;
+    @include reloj{
+        font-size: 3rem;
+        
+    }
+    @include responsi(1400px){
+        font-size: 2vw;
+    }
+}
+
+h4 {
+    margin: 0;
+    // text-transform: lowercase;
+    text-align: center;
+    font-size: 10vw;
+    @include reloj{
+        font-size: 2rem;
+        
+    }
+    @include responsi(1400px){
+        font-size: 1vw;
+    }
+}
+
+video{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid;
+    font-size: 16px;
+    height: 30px;
+    margin: 7px 0;
+}

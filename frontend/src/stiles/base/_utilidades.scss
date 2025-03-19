@@ -1,0 +1,26 @@
+
+.page{
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 50px;
+    @include telefono{
+        margin-top: 65px;
+    }
+    @include tablet{
+        margin-top: 90px;
+    }
+    @include desktop{
+        margin-top: 65px;
+    }
+
+}
+
+.hidden{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.delete{
+    background: red;
+}

@@ -1,0 +1,50 @@
+#subida{
+    .formulario{
+        form{
+            box-shadow: 6px 6px 10px 10px black;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 30px auto;
+        }
+
+        label{
+            color: black;
+        }
+
+        select{
+            width: 100%;
+            background: white;
+            color: black;
+        }
+
+        input{
+            background: white;
+            border: 1px solid black;
+            color: black;
+        }
+        .error{
+            display: flex;
+            background: red;
+            padding: 1rem;
+            margin: .5rem;
+            text-align: center;
+        }
+        .updateForm{
+            display: flex;
+            background: rgba(0, 168, 255, 0.3019607843);
+            padding: 1rem;
+            margin: 1rem;
+            .updateFormX{
+                margin: .5rem;
+                background: red;
+                padding: 1rem;
+                border-radius: 100%;
+            }
+            p{
+                overflow: hidden;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+#articulos{
+    .C1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .Cart{
+        width: 250px;
+        padding: 1rem;
+        margin: 1rem;
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px .1px black;
+        &:hover{
+            box-shadow: 14px 10px 30px 10px black;
+        }
+    }
+    .barra{
+        display: flex;
+        background: #00a8ff4d;
+        padding: 1rem;
+        justify-content: space-evenly;
+        button{
+            background: #433d7f;
+            box-shadow: 0px 0px 10px 0.1px #433d7f;
+            &:hover{
+                box-shadow: 10px 10px 10px 0.1px #433d7f;
+            }
+        }
+    }
+    .price{
+        font-size: 24px;
+        font-weight: 900;
+        span{
+            font-size: 13px;
+            color: #38b138;
+        }
+    }
+
+    .realPrice{
+        color: #666;
+        font-size: 15px;
+        text-decoration: line-through;
+    }
+}

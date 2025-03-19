@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+DIRECTORIO=/config
+
+if [ -d "$DIRECTORIO" ]
+then
+    echo ""
+else
+    mkdir config
+fi
+cp ./backend/config/cors.js ./config/cors.js
+cp ./backend/example.env ./config/backend.env
+cp ./frontend/example.env ./config/frontend.env
+cp -r ./docker/apache2 ./config/apache2
